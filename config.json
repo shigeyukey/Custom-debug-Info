@@ -1,0 +1,13 @@
+{
+    "widget_width": 1200,
+    "widget_height": 550,
+    "font_size": 16,
+    "background_color": "#1f1f1f",
+    "text_color": "#68cefe",
+    "color_traceback": "#ff5500",
+    "color_file": "#50fa7b",
+    "color_line": "#0effa7",
+    "color_error": "#ff5555",
+    "color_in": "#bd93f9",
+    "color_string": "#c57d47"
+}
