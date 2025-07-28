@@ -1,3 +1,5 @@
+# Copyright (C) Shigeyuki <http://patreon.com/Shigeyuki>
+# License: GNU AGPL version 3 or later <http://www.gnu.org/licenses/agpl.html>｣
 
 import random
 from os.path import join, dirname
@@ -85,7 +87,7 @@ class MyAddonConfig(QDialog):
 
         # Patreonﾗﾍﾞﾙ-----------------------------------
 
-        self.setWindowTitle(set_window_title)
+        self.setWindowTitle(f"{set_window_title}  (Created by Shigeඞ)")
 
         # QPushButtonを作成して､ﾌｫﾝﾄ名をprintする
         button = QPushButton('OK')
@@ -118,7 +120,7 @@ class MyAddonConfig(QDialog):
         button3.clicked.connect(lambda:openLink("https://ankiweb.net/shared/info/1594977234") )
         mini_button(button3)
 
-        button4 = QPushButton('💖Patreon')
+        button4 = QPushButton('💖Become a Patron')
         button4.clicked.connect(lambda:openLink("https://www.patreon.com/Shigeyuki") )
         mini_button(button4)
 
@@ -497,7 +499,7 @@ def setMyAddonConfigModal():
 def add_my_addon_config_button():
     mw.addonManager.setConfigAction(__name__, setMyAddonConfigModal)
 
-    myAddonAction = QAction(f"🐞{ADDON_NAME} Settings", mw)
+    myAddonAction = QAction(f"🐞{ADDON_NAME} (Created by Shigeඞ)", mw)
     qconnect(myAddonAction.triggered, setMyAddonConfig)
     mw.form.menuTools.addAction(myAddonAction)
 
